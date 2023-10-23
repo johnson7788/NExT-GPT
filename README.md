@@ -39,7 +39,7 @@ This repository hosts the code, data and model weight of **NExT-GPT**, the first
 
 ## Example Demos
 Here we showcase examples generated from NExT-GPT.
-For more examples, kindly visit the [webpage](https://next-gpt.github.io/), or the online live [demo](https://8c5fe41e445124e166.gradio.live). 
+For more examples, kindly visit the [webpage](https://next-gpt.github.io/), or the online live [demo](https://8947c8d0d9841bfa50.gradio.live). 
 
 
 https://github.com/NExT-GPT/NExT-GPT/assets/18722770/0c2b3d88-a533-4899-ab44-65580fe54538
@@ -279,7 +279,7 @@ Note of arguments:
 
 #### 3.4. Training NExT-GPT  <a href='#all_catelogue'>[Back to Top]</a>
 
-First of all, please refer to the base configuration file [[./code/config/base.yaml]](./code/config/base.yaml) for the basic system setting of overall modules.
+First of all, please refer to the base configuration file [[./code/config/base.yaml]](codegpt/config/base.yaml) for the basic system setting of overall modules.
 
 Then, the training of NExT-GPT starts with this script:
 ```angular2html
@@ -311,9 +311,9 @@ The whole NExT-GPT training involves 3 steps:
   
   Just run the above `train.sh` script by setting: `--stage 1`
   
-  Also refer to the running config file [[./code/config/stage_1.yaml]](./code/config/stage_1.yaml) and deepspeed config file [[./code/dsconfig/stage_1.yaml]](./code/dsconfig/stage_1.yaml) for more step-wise configurations.
+  Also refer to the running config file [[./code/config/stage_1.yaml]](codegpt/config/stage_1.yaml) and deepspeed config file [[./code/dsconfig/stage_1.yaml]](codegpt/dsconfig/stage_1.yaml) for more step-wise configurations.
 
-  Note that the dataset used for training in this step is included `dataset_name_list` and the dataset name must precisely match the definition in [[./code/dataset/catalog.py]](./code/dataset/catalog.py)  
+  Note that the dataset used for training in this step is included `dataset_name_list` and the dataset name must precisely match the definition in [[./code/dataset/catalog.py]](codegpt/dataset/catalog.py)  
 
 
 
@@ -321,7 +321,7 @@ The whole NExT-GPT training involves 3 steps:
 
   Just run the above `train.sh` script by setting: `--stage 2`
 
-  Also refer to the running config file [[./code/config/stage_2.yaml]](./code/config/stage_2.yaml) and deepspeed config file [[./code/dsconfig/stage_2.yaml]](./code/dsconfig/stage_2.yaml) for more step-wise configurations.
+  Also refer to the running config file [[./code/config/stage_2.yaml]](codegpt/config/stage_2.yaml) and deepspeed config file [[./code/dsconfig/stage_2.yaml]](codegpt/dsconfig/stage_2.yaml) for more step-wise configurations.
 
 
 
@@ -331,7 +331,7 @@ The whole NExT-GPT training involves 3 steps:
 
   Just run the above `train.sh` script by setting: `--stage 3`
 
-  Also refer to the running config file [[./code/config/stage_3.yaml]](./code/config/stage_3.yaml) and deepspeed config file [[./code/dsconfig/stage_3.yaml]](./code/dsconfig/stage_3.yaml) for more step-wise configurations.
+  Also refer to the running config file [[./code/config/stage_3.yaml]](codegpt/config/stage_3.yaml) and deepspeed config file [[./code/dsconfig/stage_3.yaml]](codegpt/dsconfig/stage_3.yaml) for more step-wise configurations.
 
 
 
